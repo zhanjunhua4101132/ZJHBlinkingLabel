@@ -1,0 +1,16 @@
+PODS:
+  - ZJHBlinkingLabel (0.1.0)
+
+DEPENDENCIES:
+  - ZJHBlinkingLabel (from `../`)
+
+EXTERNAL SOURCES:
+  ZJHBlinkingLabel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZJHBlinkingLabel: f340f1b0f273751a5b0cf4f1541b3a1d3140a102
+
+PODFILE CHECKSUM: 202b2134bc9c7d3e5f9afb6690549632d82b8d45
+
+COCOAPODS: 1.1.0.rc.2

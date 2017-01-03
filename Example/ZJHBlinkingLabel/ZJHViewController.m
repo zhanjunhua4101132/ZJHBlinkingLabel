@@ -7,9 +7,11 @@
 //
 
 #import "ZJHViewController.h"
+#import <ZJHBlinkingLabel/ZJHBlinkingLabel.h>
 
 @interface ZJHViewController ()
 
+@property(nonatomic,strong)ZJHBlinkingLabel* blinkingLabel;
 @end
 
 @implementation ZJHViewController
@@ -18,6 +20,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.blinkingLabel = [[ZJHBlinkingLabel alloc] initWithFrame:CGRectMake(0, 0, 150, 50)];
+    [self.view addSubview:self.blinkingLabel];
+    
+    self.blinkingLabel.text = @"I blink!";
+    self.blinkingLabel.textColor = [UIColor redColor];
+    self.blinkingLabel.font = [UIFont systemFontOfSize:25];
+    [self.blinkingLabel startBlink];
 }
 
 - (void)didReceiveMemoryWarning
