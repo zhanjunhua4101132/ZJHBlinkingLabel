@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZJHBlinkingLabel_Example' do
+  pod 'ZJHBlinkingLabel', :path => '../'
+
+  target 'ZJHBlinkingLabel_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
